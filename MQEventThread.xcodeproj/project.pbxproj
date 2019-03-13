@@ -15,6 +15,11 @@
 		29372B942238A92F008F03B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29372B932238A92F008F03B5 /* main.m */; };
 		29372B9E2238A92F008F03B5 /* MQEventThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29372B9D2238A92F008F03B5 /* MQEventThreadTests.m */; };
 		29372BA92238A92F008F03B5 /* MQEventThreadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29372BA82238A92F008F03B5 /* MQEventThreadUITests.m */; };
+		29372BB92238A965008F03B5 /* QXEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 29372BB82238A965008F03B5 /* QXEventQueue.m */; };
+		298A057B2238B0EE00FEA26C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A057A2238B0EE00FEA26C /* Person.m */; };
+		298A057E2238B35D00FEA26C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A057D2238B35D00FEA26C /* SecondViewController.m */; };
+		29B4DFD72238E9F9002B165B /* QXProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4DFD62238E9F9002B165B /* QXProxy.m */; };
+		29B4DFDC2239109C002B165B /* QXShareEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4DFDB2239109C002B165B /* QXShareEventQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		29372BA42238A92F008F03B5 /* MQEventThreadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQEventThreadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29372BA82238A92F008F03B5 /* MQEventThreadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQEventThreadUITests.m; sourceTree = "<group>"; };
 		29372BAA2238A92F008F03B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29372BB72238A965008F03B5 /* QXEventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXEventQueue.h; sourceTree = "<group>"; };
+		29372BB82238A965008F03B5 /* QXEventQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXEventQueue.m; sourceTree = "<group>"; };
+		298A05792238B0EE00FEA26C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		298A057A2238B0EE00FEA26C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		298A057C2238B35D00FEA26C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		298A057D2238B35D00FEA26C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		29B4DFD52238E9F9002B165B /* QXProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXProxy.h; sourceTree = "<group>"; };
+		29B4DFD62238E9F9002B165B /* QXProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXProxy.m; sourceTree = "<group>"; };
+		29B4DFDA2239109C002B165B /* QXShareEventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXShareEventQueue.h; sourceTree = "<group>"; };
+		29B4DFDB2239109C002B165B /* QXShareEventQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXShareEventQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +116,20 @@
 		29372B832238A92D008F03B5 /* MQEventThread */ = {
 			isa = PBXGroup;
 			children = (
+				29372BB62238A954008F03B5 /* Classes */,
 				29372B842238A92D008F03B5 /* AppDelegate.h */,
 				29372B852238A92D008F03B5 /* AppDelegate.m */,
 				29372B872238A92D008F03B5 /* ViewController.h */,
 				29372B882238A92D008F03B5 /* ViewController.m */,
+				298A057C2238B35D00FEA26C /* SecondViewController.h */,
+				298A057D2238B35D00FEA26C /* SecondViewController.m */,
 				29372B8A2238A92D008F03B5 /* Main.storyboard */,
 				29372B8D2238A92F008F03B5 /* Assets.xcassets */,
 				29372B8F2238A92F008F03B5 /* LaunchScreen.storyboard */,
 				29372B922238A92F008F03B5 /* Info.plist */,
 				29372B932238A92F008F03B5 /* main.m */,
+				298A05792238B0EE00FEA26C /* Person.h */,
+				298A057A2238B0EE00FEA26C /* Person.m */,
 			);
 			path = MQEventThread;
 			sourceTree = "<group>";
@@ -130,6 +150,19 @@
 				29372BAA2238A92F008F03B5 /* Info.plist */,
 			);
 			path = MQEventThreadUITests;
+			sourceTree = "<group>";
+		};
+		29372BB62238A954008F03B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				29372BB72238A965008F03B5 /* QXEventQueue.h */,
+				29372BB82238A965008F03B5 /* QXEventQueue.m */,
+				29B4DFD52238E9F9002B165B /* QXProxy.h */,
+				29B4DFD62238E9F9002B165B /* QXProxy.m */,
+				29B4DFDA2239109C002B165B /* QXShareEventQueue.h */,
+				29B4DFDB2239109C002B165B /* QXShareEventQueue.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298A057E2238B35D00FEA26C /* SecondViewController.m in Sources */,
+				29B4DFDC2239109C002B165B /* QXShareEventQueue.m in Sources */,
 				29372B892238A92D008F03B5 /* ViewController.m in Sources */,
 				29372B942238A92F008F03B5 /* main.m in Sources */,
+				298A057B2238B0EE00FEA26C /* Person.m in Sources */,
+				29372BB92238A965008F03B5 /* QXEventQueue.m in Sources */,
 				29372B862238A92D008F03B5 /* AppDelegate.m in Sources */,
+				29B4DFD72238E9F9002B165B /* QXProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +474,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPY5XR2ZRP;
 				INFOPLIST_FILE = MQEventThread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPY5XR2ZRP;
 				INFOPLIST_FILE = MQEventThread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "QXShareEventQueue.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    QXShareEventQueue *queue = [QXShareEventQueue shareInstance];
+    QXShareEventQueue *queue1 = [queue copy];
+    QXShareEventQueue *queue2 = [queue mutableCopy];
+    QXShareEventQueue *queue3 = [[QXShareEventQueue alloc] init];
+    NSLog(@"%p\n%p\n\%p\n%p",queue,queue1,queue2,queue3);
 }
+
+
 
 
 @end
